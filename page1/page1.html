@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- doctype declaration: we are using HTML5 -->
+
+<html lang="en">
+
+<!-- header is "invisible" info about the page -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../css/astrologyForyou.css" rel="stylesheet">
+   
+  
+   <!-- <link href="css/style.css" rel="stylesheet"> -->
+
+    <!-- TODO: add in normalize.css -->
+    
+</head>
+
+<!-- visible portion of the page -->
+
+<body>
+
+<!-- navvigate bar -->
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html">Home</a>
+  </nav>
+  <!-- description -->
+<div>
+<h1>
+Solution:
+</h1>
+<p>
+Solution to the problems is to creates radio button for saving less time to scroll.
+and a switch button creates seperately for the am and pm for fewer click and saving time
+looking for the pm and am on those numbers. for the minutes it is like a calculator.
+It is easier to click number that you know it going to range from 0-9 then scroll 60 times.
+</p>
+<h2>
+  Prototype:
+</h2>
+</div>
+<!-- radio button -->
+  <div class="row">
+    <div class="col-sm-4">
+  <div class="form-check hours">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      1
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+      2
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      3
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      4
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      5
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      6
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      7
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      8
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      9
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      10
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      11
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      12
+    </label>
+  </div>
+    </div>
+    <!-- switch for am and pm -->
+  <div class="col-sm-4">
+  <div class="form-check form-switch">
+    <input id="switch1"class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDefault">am</label>
+  </div>
+  <div class="form-check form-switch">
+    <input id="switch2" class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" disabled>
+    <label class="form-check-label" for="flexSwitchCheckChecked">pm</label>
+  </div>
+  <div id="console-box"> 
+  </div> 
+  </div>
+  <!-- tumbly box from Crumbies -->
+  <div class="col-sm-4">
+<div id="day-box">
+  <ul class="tumbly-days-ones">
+  <li class="day-ones-box">0</li>
+  <li class="day-ones-box">1</li>
+  <li class="day-ones-box">2</li>
+  <li class="day-ones-box">3</li>
+  <li class="day-ones-box">4</li>
+  <li class="day-ones-box">5</li>
+  <li class="day-ones-box">6</li>
+  <li class="day-ones-box">7</li>
+  <li class="day-ones-box">8</li>
+  <li class="day-ones-box">9</li>
+</ul>
+</div>
+  </div>
+  <div>
+    <!-- button to the next page -->
+    <a href="../index.html">
+<button id="btn2">Page1</button></a>
+</div>
+      </body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../scripts/solution.js"></script>
+</html>
